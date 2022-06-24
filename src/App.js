@@ -96,7 +96,7 @@ function App() {
           zoom: 2,
         }}
         style={{ width: "100vw", height: "100vh" }}
-        mapboxAccessToken="pk.eyJ1IjoicmFnaHVsNzciLCJhIjoiY2wxcWd0cWJsMDQ0ODNjcGFkdmw3eGplZCJ9.rTNNCZKi_2zB00442vznOA"
+        mapboxAccessToken="pk.eyJ1IjoicmFnaHVsNzciLCJhIjoiY2w0c2l5ZmRsMGdsZzNqbzZrejNkcXJydCJ9.QtCQCILIVIwhHh9TDt5TPQ"
         mapStyle="mapbox://styles/mapbox/streets-v9"
         onDblClick={AddPlace}
       >
