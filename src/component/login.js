@@ -18,7 +18,7 @@ function Login({setShowlogin,myStorage,setCurrentuser}) {
      e.preventDefault()
 try {
     
-    let res= await axios.post('/login',{username:username,password:password});
+    let res= await axios.post('https://travel-app-t.herokuapp.com/login',{username:username,password:password});
     if(res.data.statuscode === 200){
     myStorage.setItem('user' ,res.data.username);
     setShowlogin(false)

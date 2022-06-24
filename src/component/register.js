@@ -17,7 +17,7 @@ function Register({setShowregister,setShowlogin}) {
 let handleSubmit=async(e)=>{
      e.preventDefault()
 try {
-    let res= await axios.post('/register',{username:username,email:email,password:password})
+    let res= await axios.post('https://travel-app-t.herokuapp.com/register',{username:username,email:email,password:password})
    
        if(res.data.statuscode === 400){
     if(res.data.message.keyValue.username){

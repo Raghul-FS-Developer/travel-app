@@ -29,7 +29,7 @@ function App() {
 
   const getpins = async () => {
     try {
-      let res = await axios.get("http://localhost:4000/getpins");
+      let res = await axios.get("https://travel-app-t.herokuapp.com/getpins");
 
       setPins(res.data.data);
     } catch (err) {
@@ -61,7 +61,7 @@ function App() {
         long: newplace.long,
       };
       try {
-        let res = await axios.post("http://localhost:4000/pins", data);
+        let res = await axios.post("https://travel-app-t.herokuapp.com/pins", data);
         getpins();
         setNewPlace(null);
       } catch (err) {
@@ -77,7 +77,7 @@ function App() {
     try {
       let res = window.confirm("Do you want delete this pin");
       if (res === true) {
-        let ress = await axios.delete(`http://localhost:4000/delete/${id}`);
+        let ress = await axios.delete(`https://travel-app-t.herokuapp.com/delete/${id}`);
         if (ress.data == "deleted") {
           getpins();
           setCurrentPlaceId(null);
