@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Map, { Marker, Popup } from "react-map-gl";
@@ -9,9 +10,7 @@ import axios from "axios";
 import Register from "./component/register";
 import { format } from "timeago.js";
 import Login from "./component/login";
-import mapboxgl from 'mapbox-gl';
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 
 function App() {
   const myStorage = window.localStorage;
