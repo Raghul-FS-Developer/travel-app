@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@700&family=Signika+Negative:wght@500&display=swap');
+.forms{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Anek Tamil', sans-serif;
+}
+.container{
+    background-color: white;
+    height: 285px;
+    width:300px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    border-radius:5px;
+
+}.steps{
+    font-size: 15px;
+    font-family: 'Anek Tamil', sans-serif;
+    outline:none;
+    border-style: none;
+    border-bottom: 2px solid slateblue;
+    font-family: 'Anek Tamil', sans-serif;
+}.heads{
+    
+    color:slateblue;
+    margin-top:20px ;
+    margin-bottom: 0px;
+    
+    font-family: 'Anek Tamil', sans-serif;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+       font-family: 'Anek Tamil', sans-serif;
+       font-size: 20px;
+       color:slateblue;
+       align-items: center;
+}
+.btnss{
+    margin-top: 7px;
+    color: white;
+    background-color: slateblue;
+    padding: 3px;
+    border-radius: 2px;
+    border:none;
+    font-size: 17px;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+}
+.success{
+    color: green;
+   font-size: 12px;
+  text-align: center;
+   font-family:  sans-serif;
+  
+}
+.error{
+    
+    color:red;
+    font-size: 12px;
+    
+    font-family:  sans-serif;
+}
+.cancel{
+    position: absolute;
+    top:5px;
+    right:5px;
+    cursor: pointer;
+}
+.container1{
+    background-color: white;
+    height: 220px;
+    width:250px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    border-radius:5px;
+
+}

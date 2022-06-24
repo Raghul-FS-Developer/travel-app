@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@700&display=swap');
+.card{
+ height:120px;
+ width:220px;
+ overflow: hidden;
+ font-family: 'Anek Tamil', sans-serif;
+}
+.icons{
+  color:gold;
+  display: flex;
+  align-items: center;
+}
+
+.card2{
+  display: flex;
+  align-items: center;
+  font-family: 'Anek Tamil', sans-serif;
+
+}
+input{
+  outline:none;
+  border-style: none;
+  border-bottom: 2px solid crimson;
+  font-family: 'Anek Tamil', sans-serif;
+}
+textarea{
+    border:none;
+     outline: none;
+     border-bottom: 2px solid crimson;
+     font-family: 'Anek Tamil', sans-serif;
+  }
+  .addpin{
+    padding: 8px;
+    background-color:crimson;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin-left: 15px;
+    font-family: 'Anek Tamil', sans-serif;
+  }
+.btn{
+  background-color:white;
+  padding: 10px;
+  margin-left:10px;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'Anek Tamil', sans-serif;
+
+}
+.logout{
+  background-color:crimson;
+  color:white;
+  padding: 10px;
+  margin-left:10px;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'Anek Tamil', sans-serif;
+}
+.menu{
+  position:fixed;
+  top: 0;
+  margin-top: 15px;
+ right: 60px;
+    display: flex;
+  justify-content: flex-end;
+  width:100vw;
+}
+.deletebtn{
+  margin-top: 10px;
+  color:crimson;
+  border: 2px solid crimson;
+  cursor: pointer;
+  font-family: 'Anek Tamil', sans-serif;
+  background-color: white;
+}
