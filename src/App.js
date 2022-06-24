@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Map, { Marker, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillPinMapFill } from "react-icons/bs";
@@ -10,6 +9,9 @@ import axios from "axios";
 import Register from "./component/register";
 import { format } from "timeago.js";
 import Login from "./component/login";
+import mapboxgl from 'mapbox-gl';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 function App() {
   const myStorage = window.localStorage;
@@ -96,7 +98,7 @@ function App() {
           zoom: 2,
         }}
         style={{ width: "100vw", height: "100vh" }}
-        mapboxAccessToken="pk.eyJ1IjoicmFnaHVsNzciLCJhIjoiY2w0c2l5ZmRsMGdsZzNqbzZrejNkcXJydCJ9.QtCQCILIVIwhHh9TDt5TPQ"
+        mapboxAccessToken="pk.eyJ1IjoicmFnaHVsNzciLCJhIjoiY2wxcWd0cWJsMDQ0ODNjcGFkdmw3eGplZCJ9.rTNNCZKi_2zB00442vznOA"
         mapStyle="mapbox://styles/mapbox/streets-v9"
         onDblClick={AddPlace}
       >
